@@ -55,8 +55,8 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         Time.timeScale = timeScale;
-        substratesText.text = "Substrates: " + substrates;
-        productsText.text = "Products: " + products;
+        substratesText.text = "Substrates: " + (substrates - 1);
+        productsText.text = "Products: " + (products + 1);
 
     }
 }

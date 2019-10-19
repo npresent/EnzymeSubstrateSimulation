@@ -22,6 +22,7 @@ public class ActiveSite : MonoBehaviour
             other.transform.root.GetComponent<Renderer>().material = productMat;
             Spawner.products++;
             Spawner.substrates--;
+            other.transform.tag = "Untagged";
         }
 
     }
